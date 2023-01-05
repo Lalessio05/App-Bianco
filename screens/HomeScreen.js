@@ -1,14 +1,14 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Button, View } from "react-native";
+import {Button, View } from "react-native";
 
 export default function HomeScreen({ navigation }) {
   return (
-    <View style={styles.container}>
-      <Button
+    <View className="flex-1 items-center justify-center bg-white">
+      <Button color={"red"}
         title="Vai alla descrizione dei processi"
         onPress={() => navigation.navigate("Processi")}
       />
-      <View style={styles.container}>
+      <View >
         <Button
           title="Vai alla descrizione dei thread"
           onPress={() => navigation.navigate("Thread")}
@@ -18,11 +18,4 @@ export default function HomeScreen({ navigation }) {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+
