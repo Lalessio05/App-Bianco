@@ -1,5 +1,5 @@
 import HomeScreen from "./screens/HomeScreen";
-import SecondScreen from "./screens/SecondScreen";
+import CharacterScreen from "./screens/CharacterScreen";
 import ThirdScreen from "./screens/ThirdScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -16,7 +16,7 @@ export default function App() {
           component={HomeScreen}
           options={{ headerShown:false }}
         />
-        <Stack.Screen name="Processi" component={SecondScreen} />
+        <Stack.Screen name="Personaggi" component={CharacterScreen}  />
         <Stack.Screen
           name="Thread"
           component={ThirdScreen}
