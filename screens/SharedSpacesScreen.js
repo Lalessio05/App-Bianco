@@ -2,7 +2,7 @@ import { Button, View, Text, Dimensions } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { Svg, Circle, Line, Image } from "react-native-svg";
 
-export default function SharedSpacesScreen( {navigation}) {
+export default function SharedSpacesScreen({ navigation }) {
   const screenWidth = Dimensions.get("window").width;
   const screenHeigh = Dimensions.get("window").height;
   const childRadius = 50;
@@ -25,28 +25,32 @@ export default function SharedSpacesScreen( {navigation}) {
         height={childRadius * 2}
         href={require("../images/semaforo-colori.jpg")}
         onPress={() => {
-            navigation.navigate("Semafori")
+          navigation.navigate("Semafori");
         }}
       />
-      <Circle
-        cx={screenWidth / 2 - childRadius}
-        cy={600}
-        r={childRadius}
-        fill="transparent"
-      />
+      
       <Image
-      style={{borderRadius:childRadius}}
-      x={screenWidth/2-childRadius}
-      y={600}
-      width={childRadius*2}
-      height={childRadius*2}
-      href={require("../images/CartelloStop.jpg ")}
+        style={{ borderRadius: childRadius }}
+        x={screenWidth / 2 - childRadius * 2}
+        y={600}
+        width={childRadius * 2}
+        height={childRadius * 2}
+        href={require("../images/CartelloStop.jpg")}
+        onPress={() => {
+            navigation.navigate("SpiegazioneInterrupt")
+        }}
       />
-      <Circle
-        cx={screenWidth / 2 + childRadius}
-        cy={600}
-        r={childRadius}
-        fill="transparent"
+      
+      <Image
+        style={{ borderRadius: childRadius }}
+        x={screenWidth / 2 +20}
+        y={550}
+        width={childRadius * 2}
+        height={childRadius * 2}
+        href={require("../images/PetersonProvvisorio.png")}
+        onPress={() => {
+            navigation.navigate("AlgoritmoPeterson")
+        }}
       />
       <Circle
         cx={screenWidth - childRadius}
@@ -54,11 +58,22 @@ export default function SharedSpacesScreen( {navigation}) {
         r={childRadius}
         fill="transparent"
       />
+      <Image
+        style={{ borderRadius: childRadius }}
+        x={screenWidth -childRadius*2}
+        y={371}
+        width={childRadius * 2}
+        height={childRadius * 2}
+        href={require("../images/TestAndSetProvvisorio.png")}
+        onPress={() => {
+            navigation.navigate("TestAndSet")
+        }}
+      />
       <Line
         x1={screenWidth / 2}
         y1={126}
         x2={childRadius}
-        y2={400-38}
+        y2={400 - 38}
         stroke="white"
         strokeWidth="2"
       />
