@@ -34,6 +34,14 @@ export default function SharedSpacesScreen( {navigation}) {
         r={childRadius}
         fill="transparent"
       />
+      <Image
+      style={{borderRadius:childRadius}}
+      x={screenWidth/2-childRadius}
+      y={600}
+      width={childRadius*2}
+      height={childRadius*2}
+      href={require("../images/CartelloStop.jpg ")}
+      />
       <Circle
         cx={screenWidth / 2 + childRadius}
         cy={600}
