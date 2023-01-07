@@ -62,7 +62,7 @@ export default function SharedSpacesScreen({ navigation }) {
         y={600}
         width={childRadius * 3}
         height={childRadius * 2.5}
-        href={require("../images/CartelloStop.jpg")}
+        href={require("../images/CartelloStop.png")}
         onPress={() => {
           navigation.navigate("SpiegazioneInterrupt");
         }}
