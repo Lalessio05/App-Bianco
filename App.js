@@ -1,9 +1,9 @@
 import HomeScreen from "./screens/HomeScreen";
 import CharacterScreen from "./screens/CharacterScreen";
-import ThirdScreen from "./screens/ThirdScreen";
+import SharedSpacesScreen from "./screens/SharedSpacesScreen";
+import MutexScreen from "./screens/MutexesScreen"
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { View, Text, StatusBar } from "react-native";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -16,12 +16,19 @@ export default function App() {
           component={HomeScreen}
           options={{ headerShown:false }}
         />
+
         <Stack.Screen name="Personaggi" component={CharacterScreen}  />
+        
         <Stack.Screen
-          name="Thread"
-          component={ThirdScreen}
+          name="SharedSpaces"
+          component={SharedSpacesScreen}
           options={{ headerShown: false }}
         />
+        <Stack.Screen
+          name="Semafori"
+          component={MutexScreen}
+        />
+        
       </Stack.Navigator>
     </NavigationContainer>
   );

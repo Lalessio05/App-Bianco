@@ -1,4 +1,3 @@
-import { StatusBar } from "expo-status-bar";
 import { Button, View } from "react-native";
 
 export default function HomeScreen({ navigation }) {
@@ -11,8 +10,8 @@ export default function HomeScreen({ navigation }) {
       />
       <View>
         <Button
-          title="Vai alla descrizione dei thread"
-          onPress={() => navigation.navigate("Thread")}
+          title="Spazi condivisi"
+          onPress={() => navigation.navigate("SharedSpaces")}
         />
       </View>
     </View>
