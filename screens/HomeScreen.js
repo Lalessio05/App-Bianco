@@ -10,8 +10,8 @@ export default function HomeScreen({ navigation }) {
       />
       <View>
         <Button
-          title="Spazi condivisi"
-          onPress={() => navigation.navigate("SharedSpaces")}
+          title="Argomenti affrontati durante l'anno"
+          onPress={() => navigation.navigate("Argomenti")}
         />
       </View>
     </View>
