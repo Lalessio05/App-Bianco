@@ -4,13 +4,13 @@ import { View, Text, Image, TouchableOpacity, Dimensions } from "react-native";
 const IMAGE_SIZE = 100;
 
 const ImageWithText = ({ image, text, onPress, style }) => (
-  <View style={style}>
-    <TouchableOpacity onPress={onPress}>
-      <Image source={image} style={{ width: IMAGE_SIZE, height: IMAGE_SIZE }} />
-      <Text>{text}</Text>
-    </TouchableOpacity>
-  </View>
-);
+    <View style={style}>
+      <TouchableOpacity onPress={onPress}>
+        <Image source={image} style={{ width: IMAGE_SIZE, height: IMAGE_SIZE }} />
+        <Text style={{ fontSize: 20, fontWeight: 'bold' }}>{text}</Text>
+      </TouchableOpacity>
+    </View>
+  );
 
 function getRandomPosition() {
   const screenWidth = Dimensions.get("window").width;
@@ -44,8 +44,8 @@ const images = [
   {
     source: require("../images/Messaggi.jpg"),
     key: "4",
-    text: "Messaggi",
-    navigateTo: "Messaggi",
+    text: "Scambio messaggi",
+    navigateTo: "ScambioMessaggi",
   },
   {
     source: require("../images/Deadlock.jpg"),

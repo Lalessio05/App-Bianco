@@ -13,12 +13,16 @@ const ProcessesScreen = () => {
           />
           <Text style={styles.title}>I processi informatici</Text>
           <Text style={styles.description}>
-            I processi informatici sono eseguibili che vengono eseguiti dal
+            I processi sono eseguibili che vengono eseguiti dal
             sistema operativo di un computer. Ogni processo ha una sua memoria e
             risorse allocate dal sistema operativo, e può essere composto da uno
             o più thread.
           </Text>
         </View>
+        <Image
+        source={require("../images/VirtualizzazioneCpu.jpg")}
+        style={styles.image}
+        />
         <View style={styles.main}>
           <Text style={styles.subtitle}>Come funzionano</Text>
           <Text style={styles.description}>

@@ -11,9 +11,9 @@ const ThreadsScreen = () => {
             source={require("../images/Thread.jpg")}
             style={styles.image}
           />
-          <Text style={styles.title}>I thread informatici</Text>
+          <Text style={styles.title}>Thread</Text>
           <Text style={styles.description}>
-            I thread informatici sono unità di esecuzione all'interno di un
+            I thread sono unità di esecuzione all'interno di un
             processo. Ogni processo può avere uno o più thread, che condividono
             la memoria e le risorse del processo.
           </Text>
@@ -27,7 +27,7 @@ const ThreadsScreen = () => {
             del processore e la memoria al nuovo thread. Un context switch tra
             thread è solitamente più veloce di uno tra processi, poiché i thread
             condividono la memoria e le risorse del processo, mentre i processi
-            hanno risorse allocate separate.
+            hanno risorse allocate separatamente.
           </Text>
         </View>
         <View style={styles.main}>
@@ -36,28 +36,27 @@ const ThreadsScreen = () => {
             I thread possono essere in uno dei seguenti stati:
           </Text>
           <Text style={styles.description}>
-            <Text style={styles.bulletPoint}>Ready:</Text> il thread è pronto
+            <Text style={styles.bulletPoint}>•Ready:</Text> il thread è pronto
             per essere eseguito dal sistema operativo.
           </Text>
           <Text style={styles.description}>
-            <Text style={styles.bulletPoint}>Running:</Text> il thread è in
+            <Text style={styles.bulletPoint}>•Running:</Text> il thread è in
             esecuzione sul processore.
           </Text>
           <Text style={styles.description}>
-            <Text style={styles.bulletPoint}>Waiting:</Text> il thread è in
+            <Text style={styles.bulletPoint}>•Waiting:</Text> il thread è in
             attesa di un evento o di una risorsa per continuare l'esecuzione.
           </Text>
           <Text style={styles.description}>
-            <Text style={styles.bulletPoint}>Sleeping:</Text> il thread è in
+            <Text style={styles.bulletPoint}>•Sleeping:</Text> il thread è in
             pausa per un determinato periodo di tempo.
           </Text>
           <Text style={styles.description}>
-            <Text style={styles.bulletPoint}>Blocking:</Text> il thread è in
-            attesa di una risorsa che è attualmente utilizzata da un altro
-            thread.
+            <Text style={styles.bulletPoint}>•Blocked:</Text> il thread è in
+            attesa di un evento I/O.
           </Text>
           <Text style={styles.description}>
-            <Text style={styles.bulletPoint}>Dead:</Text> il thread ha
+            <Text style={styles.bulletPoint}>•Dead:</Text> il thread ha
             completato l'esecuzione o è stato interrotto.
           </Text>
           <Image source={require("../images/StatiThread.png")} style={styles.image} />
